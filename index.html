@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+  <title>Welcome to Dragon Travels</title>
+</head>
+
+<body>
+  <div>
+    <div id="successFailure" class="alert alert-success alert-dismissible fade" role="alert">
+      <!--</strong> Your form has been submitted successfully.-->
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><span
+          aria-hidden="true"></span>&times;</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Dragon Travel Desk</h1>
+    <form>
+      <div class="mb-3">
+        <label for="Username" class="form-group">Enter Username</label>
+        <input type="text" class="form-control is-invalid" id="name" placeholder="Enter your name" />
+        <small id="namevalid" class="form-text invalid-feedback ">Your username must be 2-10 characters long, should not
+          contain any special character and is should not start with numbers.</small>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-group">Email address</label>
+        <input type="text" class="form-control is-invalid" id="email" placeholder="name@example.com" />
+        <small id="emailvalid" class="form-text invalid-feedback ">Your email must be a valid one.</small>
+      </div>
+      <div class="form-group">
+        <label for="car" id="car" class="form-label">Select your car</label>
+        <select class="form-select" aria-label="Default select example">
+          <option>Maruti 800</option>
+          <option>Omni</option>
+          <option>Maruti Alto</option>
+          <option>Wagonr</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Enter your address</label>
+        <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone number</label>
+        <input class="form-control is-invalid" id="phone"></input>
+        <small id="phonevalid" class="form-text invalid-feedback ">Your phone number must be a valid one.</small>
+      </div>
+      <div class="mb-3">
+        <label for="question" class="form-label">Any question you want to ask</label>
+        <textarea class="form-control" id="question" rows="3"></textarea>
+      </div>
+      <button id="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
